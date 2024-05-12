@@ -10,13 +10,13 @@ input.onGesture(Gesture.ScreenUp, function () {
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
 })
 input.onGesture(Gesture.TiltRight, function () {
-    radio.sendString("r")
+    radio.sendString("l")
     basic.showLeds(`
-        . . . . .
-        . # . # .
-        . # # . .
         . # . . .
         . # . . .
+        . # . . .
+        . # . . .
+        . # # # .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
 })
@@ -32,13 +32,13 @@ input.onGesture(Gesture.ScreenDown, function () {
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    radio.sendString("l")
+    radio.sendString("r")
     basic.showLeds(`
+        . . . . .
+        . # . # .
+        . # # . .
         . # . . .
         . # . . .
-        . # . . .
-        . # . . .
-        . # # # .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
 })
