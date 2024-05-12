@@ -8,6 +8,7 @@ input.onGesture(Gesture.ScreenUp, function () {
         . # # # .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
+    basic.clearScreen()
 })
 input.onGesture(Gesture.TiltRight, function () {
     radio.sendString("l")
@@ -19,6 +20,7 @@ input.onGesture(Gesture.TiltRight, function () {
         . # # # .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
+    basic.clearScreen()
 })
 input.onGesture(Gesture.ScreenDown, function () {
     radio.sendString("f")
@@ -30,6 +32,7 @@ input.onGesture(Gesture.ScreenDown, function () {
         . # . . .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
+    basic.clearScreen()
 })
 input.onGesture(Gesture.TiltLeft, function () {
     radio.sendString("r")
@@ -41,4 +44,5 @@ input.onGesture(Gesture.TiltLeft, function () {
         . # . . .
         `)
     music.play(music.stringPlayable("C5 B A G F E D C ", 333), music.PlaybackMode.UntilDone)
+    basic.clearScreen()
 })
